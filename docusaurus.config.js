@@ -213,9 +213,9 @@ const config = {
     },
     giscus: {
       repo: 'wrm244/docusaurus-theme-zen',
-      repoId: 'R_kgDOJZxVmA',
+      repoId: 'R_kgDOJZ-VIA',
       category: 'General',
-      categoryId: 'DIC_kwDOJZxVmM4CV9H2',
+      categoryId: 'DIC_kwDOJZ-VIM4CV95r',
       loading: "lazy",
       lang: "zh-CN",
     },
