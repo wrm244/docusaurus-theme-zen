@@ -1,0 +1,42 @@
+.list {
+  margin-bottom: 20px;
+}
+
+.item {
+  border-radius: 4px;
+}
+
+.item:hover {
+  /* background-color: rgb(185, 185, 185); */
+  background-color: #05a1ec;
+
+}
+
+.item a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 1000;
+  padding: 3px;
+  
+}
+
+.item a > img {
+  height: 25px;
+  width: 25px;
+  margin-left: 6px;
+}
+
+.item a > img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+[data-theme="dark"] .item a,
+.item a:hover {
+  color: white;
+}
+
+[data-theme="dark"] .item:hover{
+  background-color: #7390d2;
+}

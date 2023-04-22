@@ -1,0 +1,472 @@
+.info-container {
+    max-width: 80%;
+    position: relative;
+    margin: 120px auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    min-width: 300px;
+    min-height: 180px;
+
+}
+
+.info-container .card{
+    width: 5px;
+    height: 3px;
+    transform: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .back {
+    position: absolute;
+    margin-top: 10;
+    /* top: 10; */
+    margin-left: 10;
+    width: 115%;
+    height: 145%;
+    /* overflow: hidden; */
+}
+.card .back::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #c2c1c1;
+    clip-path: circle(25% at center);
+    border-radius: 5% 5% 15% 5% / 8.5% 8.5% 25.5% 8.5% ;
+    transition: 0.5s;
+}
+.card:hover .back::before{
+    clip-path: circle(100% at center);
+    background: #a5a5a5;
+    box-shadow: 10px 10px 15px #66666649;
+}
+
+html[data-theme='dark'] .card .back::before {
+    background: #a5a5a5;
+}
+
+html[data-theme='dark'] .card:hover .back::before {
+    background: #25c2a0;
+}
+
+.card .content{
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    left: 35%;
+    /* top: -60%; */
+    margin-top: -10%;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+}
+.card:hover .content{
+    opacity: 1;
+    visibility: visible;
+}
+
+@font-face {
+    font-family: "Baby Blocks Font";
+    src: url("/static/fonts/BabyBlocks-OGv8.ttf") format("truetype");
+}
+.card .content h2{
+    text-align: left;
+    font-family: "Baby Blocks Font";
+    width: 120%;
+}
+
+.card .content .social-icons {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    left: 12.1%;
+
+    
+    /* top: 0; */
+    /* bottom: 50%; */
+    display: flex;
+    transform-origin: center;
+    transform: rotate(45deg);
+}
+.card .content .social-icons .icons-top,
+.card .content .social-icons .icons-back {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template: 1fr 1fr;
+}
+.card .content .social-icons .icons-top::before,
+.card .content .social-icons .icons-back::before {
+    content:'';
+    position:absolute;
+    width: 66%;
+    height: 82%;
+    top: 9%;
+    left: 17%;
+    border-radius: 999em ;
+    background-color:#e6e7e8;
+}
+.card .content .social-icons .icons-top::after,
+.card .content .social-icons .icons-back::after {
+    content:'';
+    position:absolute;
+    width: 66%;
+    height: 82%;
+    top: 9%;
+    left: 17%;
+    border-radius: 999em ;
+    box-shadow: 0 0 10px #404041 ;
+    pointer-events: none;
+}
+.card .content .social-icons .icons-top .icon-t,
+.card .content .social-icons .icons-top .icon-l,
+.card .content .social-icons .icons-back .icon-r,
+.card .content .social-icons .icons-back .icon-b {
+    position: relative;
+    margin: 25%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #404041;
+    transform-origin: center;
+    transform: rotate(-45deg);
+    
+}
+.card .content .social-icons .icons-top .icon-t {
+    background-color: #5252cb;
+}
+.card .content .social-icons .icons-top .icon-l {
+    background-color: #4dcb3a;
+}
+.card .content .social-icons .icons-back .icon-r {
+    background-color: #b32400;
+}
+.card .content .social-icons .icons-back .icon-b {
+    background-color: #fce00d;
+}
+
+.card .content .social-icons .icons-top .icon-t:hover,
+.card .content .social-icons .icons-top .icon-l:hover,
+.card .content .social-icons .icons-back .icon-r:hover,
+.card .content .social-icons .icons-back .icon-b:hover{
+    transform: rotate(-45deg) scale(1.35);
+    box-shadow: 0 0 10px #404041;
+}
+
+.card .content .social-icons .icons-top .icon-t a,
+.card .content .social-icons .icons-top .icon-l a,
+.card .content .social-icons .icons-back .icon-r a,
+.card .content .social-icons .icons-back .icon-b a{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+}
+
+.card .content .social-icons .icons-back .icon-r a {
+    top: 0%;
+    left: -3%;
+}
+
+.card .content .social-icons .icons-top .icon-t a img,
+.card .content .social-icons .icons-top .icon-l a img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.6s;
+}
+
+.card .content .social-icons .icons-back .icon-r a img,
+.card .content .social-icons .icons-back .icon-b a img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    opacity: 0;
+    visibility: visible;
+    transition: 0.6s;
+}
+
+.card .content .social-icons .icons-back .icon-r a img{
+    width: 90%;
+    height: 90%;
+}
+
+.card .content .social-icons .icons-top .icon-t:hover a img,
+.card .content .social-icons .icons-top .icon-l:hover a img,
+.card .content .social-icons .icons-back .icon-r:hover a img,
+.card .content .social-icons .icons-back .icon-b:hover a img{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .content .social-icons .icons-back .icon-r .dropdown__menu,
+.card .content .social-icons .icons-back .icon-b .dropdown__menu{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
+/* ----------------------------------------------------- */
+.card .zoom{
+    position: absolute;
+    transform: scale(0.75);
+    transition: 0.5s;
+}
+.card:hover .zoom{
+    transform: scale(1) translateX(-100%);
+}
+
+/* GameBoy style */
+.gameboy {
+    margin: auto;
+    position: relative;
+    height:324px;
+    width:200px;
+    display: flex;
+    justify-content: center;
+}
+.gameboy div {
+    position:absolute;
+}
+.gameboy div:before, 
+.gameboy div:after {
+    content:'';
+    position:absolute;
+    display:block;
+}
+
+.gameboy .body{
+    width:100%;
+    height:100%;
+    background-color:#e6e7e8;
+    border-radius:8px 8px 30px 8px;
+    border:5px solid #404041;
+}
+.gameboy .body:before {
+    width:102%;
+    height:0px;
+    border-top:5px solid #404041;
+    top: 6.8%;
+    left: -1%;
+}
+.gameboy .body:after {
+    width:0px;
+    height:7.8%;
+    border-left:5px solid #404041;
+    box-shadow:147px 0px #404041;
+    left:9.5%;
+    top: -0.5%;
+}
+
+.gameboy .screen-box {
+    width:76.75%;
+    height:36.57%;
+    background-color: #877d7c;
+    border-radius:8px 8px 30px 8px;
+    border:4px solid #404041;
+    top:12.5%;
+    left: 9.5%;
+}
+.gameboy .screen-box .decorate{
+    width:10.5%;
+    height:3%;
+    background-color:#404041;
+    top: 6%;
+    left:90%;
+}
+.gameboy .screen-box .decorate::before{
+    width:100%;
+    height:100%;
+    background-color:#404041;
+    top: 250%;
+}
+.gameboy .screen-box .decorate::after{
+    width:100%;
+    height:100%;
+    background-color:#404041;
+    top: 1100%;
+    left: -835%;
+}
+
+.gameboy .screen-box .screen {
+    width:65%;
+    height:70%;
+    background-color:#7fbd6b;
+    border-radius:6px;
+    border:3px solid #404041;
+    top:11.5%;
+    left:14.5%;
+    overflow: hidden;
+    transition: 0.8s;
+}
+.info-container .card:hover .screen {
+    background-color:#6ee845;
+    box-shadow: 0px 0px 18px#71ed48;
+}
+.gameboy .screen-box .screen img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    transition: 0.8s;
+    filter: brightness(75%);
+}
+.info-container .card:hover .screen img {
+    filter: brightness(90%);
+}
+
+.gameboy .lights {
+    width:4.86%;
+    height:3%;
+    background-color:#e2674f;
+    border-radius:50%;
+    border:2px solid #404041;
+    top:23.5%;
+    left:14.8%;
+    transition: 0.2s;
+}
+.info-container .card:hover .lights {
+    background-color:#e84929;
+    box-shadow: 0px 0px 6px rgba(248, 102, 45, 0.928);
+    filter: brightness(150%);
+}
+
+.gameboy .buttons-1{
+    width:9.36%;
+    height:5.78%;
+    border-radius:50%;
+    background-color:#eb573b;
+    border:2px solid #404041;
+    top:60%;
+    left:80%;
+}
+.gameboy .buttons-1::before{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background-color:#eb573b;
+    border:2px solid #404041;
+    top:80%;
+    left:-200%;
+}
+
+.gameboy .buttons-2{
+    width:12.625%;
+    height:2.67%;
+    background-color:#5252cb;
+    border:2px solid #404041;
+    border-radius:5px;
+    -ms-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    top:82%;
+    left:45%;
+}
+
+.gameboy .buttons-2-2{
+    width:12.625%;
+    height:2.67%;
+    background-color:#5252cb;
+    border:2px solid #404041;
+    border-radius:5px;
+    -ms-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    top:82%;
+    left:30%;
+}
+
+.gameboy .pad-back {
+    width: 10%;
+    height: 16.7%;
+    background-color: #404041;
+    top: 58%;
+    left: 20%;
+}
+.gameboy .pad-back::before {
+    width: 100%;
+    height: 100%;
+    background-color: #404041;
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+.gameboy .pad-back .pad-top{
+    width: 80%;
+    height: 90%;
+    background-color:#776863;
+    top: 5%;
+    left: 10%;
+}
+.gameboy .pad-back .pad-top::before{
+    width: 100%;
+    height: 100%;
+    background-color: #776863;
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+
+.gameboy .details-top {
+    width: 18%;
+    height: 1.5%;
+    border-radius: 5px;
+    background-color: #abaf99;
+    top: 4%;
+    left: 15%;
+}
+.gameboy .details-top::before {
+    width: 10%;
+    height: 100%;
+    background-color: #abaf99;
+    top: -180%;
+    left: 10%;
+    box-shadow: 8px 0px #abaf99,
+                16px 0px #abaf99;
+}
+
+.gameboy .details-back {
+    width: 18%;
+    height: 1.5%;
+    border-radius: 5px;
+    background-color: #abaf99;
+    top: 95%;
+    left: 40%;
+}
+
+.gameboy .details-back .details-r {
+    width: 66.6%;
+    height: 80%;
+    border-radius: 5px;
+    background-color: #abaf99;
+    -ms-transform: rotate(42deg);
+    transform: rotate(42deg);
+    left: 135%;
+    top: -80%;
+    box-shadow: 3px -10px #abaf99,
+                5px -20px #abaf99,
+                7px -30px #abaf99,
+                9px -40px #abaf99,
+                11px -50px #abaf99;
+}
+
+@media screen and (max-width: 966px) {
+    .info-container .card{
+        width: 300px;
+        height: 180px;
+        transform: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card .zoom{
+        transform: scale(0.45);
+    }
+    .card:hover .zoom{
+        transform: scale(0.6) translateX(-100%);
+    }
+    .card .content h2{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,12 @@
+.highlight{
+    background: #3477f6;
+    border-radius: 5px;
+    color: #ffff;
+    padding: 0.1rem;
+    /* font-size: 1.1em; */
+    /* font-weight: 500; */
+}
+
+[data-theme='dark'] .highlight{
+    background: #5075ca;
+}

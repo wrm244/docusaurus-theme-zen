@@ -1,0 +1,82 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Use Node.js v18.16
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.16.0'
+
+      - name: Cache node modules
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn install
+      
+      - name: Build Project
+        run: |
+          yarn run build
+
+      # - name: SSH Deploy
+      #   uses: easingthemes/ssh-deploy@v2.2.11
+      #   env:
+      #     SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+      #     ARGS: '-avzr --delete'
+      #     SOURCE: './build'
+      #     REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+      #     REMOTE_USER: 'root'
+      #     TARGET: '/www/wwwroot/wrm244'
+
+      - name: Github page Deploy
+        uses: wrm244/docusaurus-deploy-action@master # 
+        env:
+          PERSONAL_TOKEN: ${{ secrets.PERSION_TOKEN }} # secret 名
+          PUBLISH_REPOSITORY: wrm244/docusaurus-theme-zen # 公共仓库，格式：GitHub 用户名/仓库名
+          BRANCH: gh-pages # 分支，填 gh-pages 就行
+          PUBLISH_DIR: ./build # 部署 public 目录下的文件
+
+      - name: Sync to Gitee
+        uses: wearerequired/git-mirror-action@master
+        env:
+          # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
+        with:
+          # 注意替换为你的 GitHub 源仓库地址
+          source-repo: git@github.com:wrm244/docusaurus-theme-zen.git
+          # 注意替换为你的 Gitee 目标仓库地址
+          destination-repo: git@gitee.com:wrm244/docusaurus-theme-zen.git
+      #仅仅支持英文      
+      # - name: Install Prince
+      #   run: |
+      #     curl https://www.princexml.com/download/prince-15.1-linux-generic-x86_64.tar.gz -O
+      #     tar zxf prince-15.1-linux-generic-x86_64.tar.gz
+      #     cd prince-15.1-linux-generic-x86_64
+      #     yes "" | sudo ./install.sh
+
+      # - name: Build PDF
+      #   run: npx docusaurus-prince-pdf -u ${{ secrets.WEB_URL }} --output docs.pdf
+
+      # - name: Upload results
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: result
+      #     # The output filename can be specified with --output option
+      #     path: docs.pdf
+      #     if-no-files-found: error

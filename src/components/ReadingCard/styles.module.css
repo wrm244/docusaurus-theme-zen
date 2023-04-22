@@ -1,0 +1,67 @@
+/* this card is inspired form this - https://georgefrancis.dev/ */
+
+/* .card {
+    --border-radius: 0.75rem;
+    --primary-color: #7257fa;
+    --secondary-color: #3c3852;
+
+    font-family: "Arial";
+    border-radius: var(--border-radius);
+
+    box-shadow: 9px 9px 9px #b2b2b2,-9px -9px 9px #fafafa;;
+    position: relative;
+    margin: 1rem 0rem 1rem 0rem;
+
+    background: rgba( 255, 255, 255, 0.25 );
+
+    backdrop-filter: blur( 16px );
+    -webkit-backdrop-filter: blur( 16px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  } */
+  
+/*Retro Style Card*/
+
+.card {
+  /* width: 190px;
+  height: 254px; */
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px #fff, 15px 15px 0 0 #000;
+
+  margin: 1rem 0.8rem 1.8rem 0.5rem;
+}
+
+[data-theme='dark'] .card{
+  background: #2e303d ;
+  box-shadow: 15px 15px 0 -2.5px #2e303d, 15px 15px 0 0 #000;
+}
+
+.card .card__content {
+  color: var(--ifm-text-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.card .card__title {
+  text-align: right;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.card .card__date {
+  text-align: right;
+  font-size: 0.95rem;
+  font-weight: bold;
+
+  padding: 0rem 1rem 0.3rem 1rem;
+}
+
+[data-theme='dark'] .card .card__content,
+[data-theme='dark'] .card .card__title {
+  color: #cbccdc;
+}

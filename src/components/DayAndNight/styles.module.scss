@@ -1,0 +1,209 @@
+$sun: #f2ba52;
+$moon: #f2eddf;
+
+// body{
+// 	// top: 500px;
+// }
+
+.wrapper {
+	-webkit-box-shadow: 5px 7px 16px 2px rgba(0, 0, 0, 0.44);
+	box-shadow: 5px 7px 16px 2px rgba(0, 0, 0, 0.44);
+	margin-top: 0%;
+	border: 0px solid; // 边框
+	border-image: url(https://images.pexels.com/photos/131683/pexels-photo-131683.jpeg)
+		100 / 19px / 0px round;
+	width: 540px;
+	height: 330px;
+	margin-right: auto;
+	// margin-left: auto;
+	overflow: hidden;
+	position: relative;
+
+	// display: flex;
+	// justify-content: left;
+	z-index: -1;
+
+	min-width:50%;
+	max-width: 100%
+}
+.mount-1 {
+	position: absolute;
+	top: 215px;
+}
+.mount-2 {
+	position: absolute;
+	top: 210px;
+}
+.rotate {
+	animation-name: rotation;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.bg { // 背景
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgb(171, 219, 221);
+	background: linear-gradient(
+		100deg,
+		rgba(171, 219, 221, 1) 23%,
+		rgba(35, 21, 38, 1) 100%
+	);
+	height: 600px;
+	width: 550px;
+
+	// width: 540px;
+	// height: 330px;
+}
+.rotation { // 旋转主体
+	-webkit-box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.66);
+	-moz-box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.66);
+	box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.66);
+	margin-top: 25%;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 50%;
+	height: 500px;
+	width: 500px;
+	background: rgb(242, 237, 223);
+	background: linear-gradient(
+		150deg,
+		rgba(242, 237, 223, 1) 0%,
+		rgba(40, 124, 134, 1) 58%,
+		rgba(15, 48, 53, 1) 100%
+	);
+	position: relative;
+}
+.sun {
+	top: -50px;
+	left: 205px;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	background-color: $sun;
+	position: absolute;
+	-webkit-box-shadow: 0px 0px 115px 10px rgba(242, 186, 82, 0.55);
+	-moz-box-shadow: 0px 0px 115px 10px rgba(242, 186, 82, 0.55);
+	box-shadow: 0px 0px 115px 10px rgba(242, 186, 82, 0.55);
+}
+.moon {
+	bottom: -50px;
+	left: 150px;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	background-color: $moon;
+	position: absolute;
+	-webkit-box-shadow: 0px 0px 115px 10px rgba(242, 237, 223, 0.55);
+	-moz-box-shadow: 0px 0px 115px 10px rgba(242, 237, 223, 0.55);
+	box-shadow: 0px 0px 115px 10px rgba(242, 237, 223, 0.55);
+}
+
+/** 在移动设备上，缩小 padding */
+@media screen and (max-width: 996px){
+	.wrapper {
+		-webkit-box-shadow: 5px 7px 16px 2px rgba(0, 0, 0, 0.44);
+		box-shadow: 5px 7px 16px 2px rgba(0, 0, 0, 0.44);
+		margin-top: 0%;
+		border: 0px solid; // 边框
+		border-image: url(https://images.pexels.com/photos/131683/pexels-photo-131683.jpeg)
+		100 / 19px / 0px round;
+		width: 375px;
+		height: 290px;
+		margin-right: auto;
+		// margin-left: auto;
+		overflow: hidden;
+		position: relative;
+		
+		// display: flex;
+		// justify-content: left;
+		
+	}
+	.mount-1 {
+		position: absolute;
+		top: 215px;
+	}
+	.mount-2 {
+		position: absolute;
+		top: 210px;
+	}
+	.rotate {
+		animation-name: rotation;
+		animation-duration: 15s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+	.bg { // 背景
+		position: absolute;
+		top: 0px;
+		left: -70px;
+		background: rgb(171, 219, 221);
+		background: linear-gradient(
+			100deg,
+			rgba(171, 219, 221, 1) 23%,
+			rgba(35, 21, 38, 1) 100%
+			);
+			height: 300px;
+			width: 500px;
+
+		}
+		.rotation { // 旋转主体
+			-webkit-box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.66);
+			-moz-box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.66);
+			box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.66);
+			margin-top: 25%;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 50%;
+			height: 400px;
+			width: 400px;
+			background: rgb(242, 237, 223);
+			background: linear-gradient(
+				150deg,
+				rgba(242, 237, 223, 1) 0%,
+				rgba(40, 124, 134, 1) 58%,
+			rgba(15, 48, 53, 1) 100%
+			);
+			position: relative;
+		}
+		.sun {
+			top: -50px;
+			left: 205px;
+			border-radius: 50%;
+			height: 100px;
+			width: 100px;
+			background-color: $sun;
+			position: absolute;
+			-webkit-box-shadow: 0px 0px 115px 10px rgba(242, 186, 82, 0.55);
+			-moz-box-shadow: 0px 0px 115px 10px rgba(242, 186, 82, 0.55);
+			box-shadow: 0px 0px 115px 10px rgba(242, 186, 82, 0.55);
+		}
+		.moon {
+			bottom: -50px;
+			left: 150px;
+			border-radius: 50%;
+			height: 100px;
+			width: 100px;
+			background-color: $moon;
+			position: absolute;
+		-webkit-box-shadow: 0px 0px 115px 10px rgba(242, 237, 223, 0.55);
+		-moz-box-shadow: 0px 0px 115px 10px rgba(242, 237, 223, 0.55);
+		box-shadow: 0px 0px 115px 10px rgba(242, 237, 223, 0.55);
+	}
+}
+
+@keyframes day {
+}
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes night {
+}
+@keyframes moon {
+}

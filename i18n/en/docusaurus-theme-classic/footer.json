@@ -1,0 +1,70 @@
+{
+  "link.title.学习": {
+    "message": "Study",
+    "description": "The title of the footer links column with title=学习 in the footer"
+  },
+  "link.title.社交媒体": {
+    "message": "Social Media",
+    "description": "The title of the footer links column with title=社交媒体 in the footer"
+  },
+  "link.title.更多": {
+    "message": "More",
+    "description": "The title of the footer links column with title=更多 in the footer"
+  },
+  "link.item.label.标签": {
+    "message": "Tags",
+    "description": "The label of footer link with label=标签 linking to tags"
+  },
+  "link.item.label.归档": {
+    "message": "Archive",
+    "description": "The label of footer link with label=归档 linking to archive"
+  },
+  "link.item.label.笔记": {
+    "message": "Notes",
+    "description": "The label of footer link with label=笔记 linking to docs/skill"
+  },
+  "link.item.label.项目": {
+    "message": "Projects",
+    "description": "The label of footer link with label=项目 linking to project"
+  },
+  "link.item.label.前端示例": {
+    "message": "Frontend Examples",
+    "description": "The label of footer link with label=前端示例 linking to https://example.kuizuo.cn"
+  },
+  "link.item.label.关于我": {
+    "message": "About Me",
+    "description": "The label of footer link with label=关于我 linking to /about"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/kuizuo"
+  },
+  "link.item.label.掘金": {
+    "message": "Juejin",
+    "description": "The label of footer link with label=掘金 linking to https://juejin.cn/user/1565318510545901"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/M8cVcjDxkz"
+  },
+  "link.item.label.友链": {
+    "message": "Friends",
+    "description": "The label of footer link with label=友链 linking to friends"
+  },
+  "link.item.label.导航": {
+    "message": "Links",
+    "description": "The label of footer link with label=导航 linking to resource"
+  },
+  "copyright": {
+    "message": "Copyright © 2023 docusaurus-theme-zen. Built with <a href=\"https://docusaurus.io/zh-CN/\" target=\"_blank\">Docusaurus.</a><br/><script async src=\"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js\"></script><br/><span id=\"busuanzi_container_site_pv\">This site has been visited <span id=\"busuanzi_value_site_pv\"></span> times in total.</span>",
+    "description": "The footer copyright"
+  },
+  "link.title.博客": {
+    "message": "Blog",
+    "description": "The label of footer link with label=博客 linking to resource"
+  },
+  "link.item.label.幻灯片": {
+    "message": "Slides",
+    "description": "The label of footer link with label=幻灯片 linking to https://wrm244.gitee.io/slide/"
+  }
+}

@@ -1,0 +1,20 @@
+.linkWrapper {
+  display: inline-flex;
+}
+
+.textArea {
+  display: flex;
+  align-items: center;
+}
+
+.textBold {
+  font-weight: bolder;
+}
+
+.linkSVG {
+  margin: 0 4px;
+}
+
+[data-theme="dark"] .linkSVG svg {
+  fill: white;
+}
