@@ -1,3 +1,4 @@
+@import "local.google.fonts.css";
 :root {
   --ifm-color-primary: #0086f1;
   --ifm-color-primary-dark: #05a1ec;
@@ -6,9 +7,10 @@
   --ifm-color-primary-light: #2cb8fb;
   --ifm-color-primary-lighter: #b0e6ff;
   --ifm-color-primary-lightest: #d5f1fd;
-  --ifm-code-font-size: 95%;
-  --ifm-font-family-base: 'SF Pro Text','SF Pro Display','SF Pro Icons','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui, ui-sans-serif,-apple-system,'Segoe UI', 'Helvetica Neue', 'Noto Sans', sans-serif, 'Apple Color Emoji',consolas,'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', consolas,sfmono-regular, menlo, monaco, 'Liberation Mono', monospace;
+  --ifm-code-font-size: 90%;
+  --ifm-font-family-base: 'Noto Serif SC','SF Pro Text','SF Pro Display','SF Pro Icons','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui, ui-sans-serif,-apple-system,'Segoe UI', 'Helvetica Neue', 'Noto Sans', sans-serif, 'Apple Color Emoji',consolas,'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', consolas,sfmono-regular, menlo, monaco, 'Liberation Mono', monospace;
   --ifm-heading-font-family: var(var(--ifm-font-family-base));
+  // --ifm-font-family-monospace: 'JetBrainsMono','Noto Sans SC','SF Pro Text','SFMono-Regular','Menlo','Monaco','Consolas',"Liberation Mono","Courier New",'monospace'
   /* --content-font-family: "Raleway", "Kai", "楷体", "Kaiti", serif; */
 
   --ifm-navbar-shadow: 0 4px 28px rgb(0 0 0 / 10%);
@@ -118,7 +120,9 @@ html[data-theme='dark'] :is(h1, h2, h3, h4, h5, h6) {
 }
 
 body {
-  font-family: 'SF Pro Text','SF Pro Display','SF Pro Icons','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui, ui-sans-serif,-apple-system,'Segoe UI', 'Helvetica Neue', 'Noto Sans', sans-serif, 'Apple Color Emoji',consolas,'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', consolas,sfmono-regular, menlo, monaco, 'Liberation Mono', monospace;
+  font-family: 'Noto Serif SC','SF Pro Text','SF Pro Display','SF Pro Icons','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui, ui-sans-serif,-apple-system,'Segoe UI', 'Helvetica Neue', 'Noto Sans', sans-serif, 'Apple Color Emoji',consolas,'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', consolas,sfmono-regular, menlo, monaco, 'Liberation Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  font-display: swap;
 }
 
 html,
@@ -241,7 +245,7 @@ html[data-theme='dark'] .theme-code-block {
   
   // 毛玻璃效果
   background-color: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   opacity: 1;
 
   .navbar__title {

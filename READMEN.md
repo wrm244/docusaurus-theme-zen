@@ -26,8 +26,24 @@
 
 ## Introduction
 
+![网站首页](./static/assets/images/docus.png)
+
+![网站首页](./static/assets/images/docus_bark.png)
+
 This is a theme built with docusaurus, which combines the simplicity and ease of use of docusaurus with other open source page design solutions, supports MDX and React, is extensible and customizable, and also has a beautiful design, a blog and documentation integrated theme, providing you with an excellent personal page solution.This theme Built with🦖 <a href="https://docusaurus.io/">Docusaurus</a>
 
+## Features
+- [x] 主页+博客+文档三合一
+- [x] 利用Typescript自定义页面
+- [X] 生成全静态网页文件 
+- [x] 优化页面符合现代美观(毛玻璃虚化样式，pwa优化...)
+- [X] 支持国际化 
+- [x] 代码项目展示
+- [x] 代码块显示行号
+- [x] 结合obsidian进行写作 
+- [ ] 直接转为幻灯片格式，可在线浏览放映
+- [ ] 个人简历页面
+- [ ] 分享功能
 ## Directory Structure
 
 ```bash
