@@ -1,6 +1,6 @@
 const path = require('path')
-// const math = require('remark-math');
-// const katex = require('rehype-katex');
+const math = require('remark-math');
+const katex = require('rehype-katex');
 const announcementBarContent = `🎉欢迎浏览<a href="https://github.com/wrm244/docusaurus-theme-zen/" target="_blank">docusaurus-theme-zen</a>`
 
 /** @type {import('@docusaurus/types').Config} */
@@ -251,8 +251,8 @@ const config = {
         docs: {
           path: 'docs',
           sidebarPath: 'sidebars.js',
-          // remarkPlugins: [math],
-          // rehypePlugins: [katex],
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: false,
         theme: {
@@ -335,14 +335,14 @@ const config = {
       },
     ],
   ],
-  // stylesheets: [
-  //   {
-  //   href: 'https://jsd.onmicrosoft.cn/npm/katex@0.13.24/dist/katex.min.css',
-  //   type: 'text/css',
-  //   integrity:
-  //     'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-  //   crossorigin: 'anonymous',
-  // },],
+  stylesheets: [
+    {
+    href: 'https://jsd.onmicrosoft.cn/npm/katex@0.13.24/dist/katex.min.css',
+    type: 'text/css',
+    integrity:
+      'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+    crossorigin: 'anonymous',
+  },],
   i18n: {
     defaultLocale: 'zh-CN',
     locales: ['en', 'zh-CN'],
