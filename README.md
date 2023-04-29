@@ -1,8 +1,5 @@
 
-## Docusaurus-Theme-Zen
-<div align="center">
-<img src="static/assets/images/avatar300.png"/>
-</div>
+## Docusaurus-Theme-Zen [<img src="static/assets/images/avatar300.png" width="90" height="90" align="right">](https://wrm244.gxist.cn/)
 
 <p align="center">
 <img src="https://img.shields.io/github/last-commit/wrm244/docusaurus-theme-zen?label=update&logo=github" alt="last-commit" />
