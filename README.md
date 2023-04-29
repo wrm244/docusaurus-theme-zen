@@ -1,5 +1,5 @@
 
-## Docusaurus-Theme-Zen [<img src="static/assets/images/avatar300.png" width="90" height="90" align="right">](https://wrm244.gxist.cn/)
+## Docusaurus-Theme-Zen [<img src="static/assets/images/avatar300.png" width="90" height="90" align="right">](https://wrm244.github.io/docusaurus-theme-zen/)
 
 <p align="center">
 <img src="https://img.shields.io/github/last-commit/wrm244/docusaurus-theme-zen?label=update&logo=github" alt="last-commit" />
@@ -18,7 +18,7 @@
 <a href="https://stackblitz.com/github/wrm244/docusaurus-theme-zen" rel="nofollow"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"></a> <a href="https://vercel.com/new/clone?repository-url=https://github.com/wrm244/docusaurus-theme-zen/tree/main&project-name=blog&repo-name=blog" rel="nofollow"><img src="https://vercel.com/button"></a>
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/wrm244/docusaurus-theme-zen" rel="nofollow"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
 <br/>
-<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="https://wrm244.github.io/assets/images/buildwith.png" /></a>  <a href="https://www.netlify.com/" target="_blank"><img alt="Built with Netlify" style="height:50px;margin-top:0.5rem " src="https://wrm244.github.io/assets/images/netlify-color-accent.svg" /></a>     
+<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="https://wrm244.github.io/assets/images/buildwith.png" /></a>  <a href="https://www.netlify.com/" target="_blank"><img alt="Built with Netlify" style="height:50px;margin-top:0.5rem " src="https://wrm244.github.io/assets/images/netlify-color-accent.svg" /></a>    
 </p>
 
 ## 介绍
