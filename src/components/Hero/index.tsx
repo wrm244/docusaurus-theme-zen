@@ -52,12 +52,12 @@ function Hero() {
         <animated.div style={trails[0]} className={styles.hero_text}>
           <Translate id="homepage.hero.greet">欢迎使用</Translate>
           <span className={styles.intro__name}>
-            <Translate id="homepage.hero.name">docusaurus-theme-zen</Translate>
+            <Translate id="homepage.hero.name">飞鸟集网络服务</Translate>
           </span>
         </animated.div>
         <animated.p style={trails[1]}>
           <Translate id="homepage.hero.text">
-            {`这是使用docusaurus搭建的主题,结合了docusaurus简单易用与其他开源页面设计方案、支持MDX和React、可扩展和定制等优点，以及加上设计美观便利、博客与文档一体的主题，为你提供一个优秀的个人页面解决方案。`}
+            {`飞鸟集是一个涵盖网络方案、网站建设、奇思妙想小工具的集合地。`}
           </Translate>
           <br />
           {/* <Translate
@@ -89,16 +89,16 @@ function Hero() {
           </Translate> */}
           <br />
           {/* 徽章的效果 */}
-          <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/wrm244/docusaurus-theme-zen?label=Update&logo=github" style={{ boxShadow: '0px 16px 30px rgb(62 196 109 / 15%)', marginTop: '14px' }} /> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/wrm244/docusaurus-theme-zen/ci.yml?label=CI%20Build&logo=github" style={{ boxShadow: '0px 16px 30px rgb(62 196 109 / 15%)', marginTop: '14px' }}></img>
+{/*          <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/wrm244/docusaurus-theme-zen?label=Update&logo=github" style={{ boxShadow: '0px 16px 30px rgb(62 196 109 / 15%)', marginTop: '14px' }} /> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/wrm244/docusaurus-theme-zen/ci.yml?label=CI%20Build&logo=github" style={{ boxShadow: '0px 16px 30px rgb(62 196 109 / 15%)', marginTop: '14px' }}></img> */}
         </animated.p>
         <SocialLinks style={trails[2]} />
         <animated.div style={trails[3]}>
-          <a className={styles.intro} href={'./first-blog'}>
-            <Translate id="hompage.hero.introduce">自我介绍</Translate>
+          <a className={styles.intro} href={'https://www.offshoreview.xyz'}>
+            <Translate id="hompage.hero.introduce">访问站点</Translate>
           </a>
           <span>　</span>
           <Button isLink href={'https://github.com/wrm244/docusaurus-theme-zen/'} target="_blank">
-            <Translate id="hompage.hero.text.repository">Github仓库</Translate>
+            <Translate id="hompage.hero.text.repository">Github 仓库</Translate>
           </Button>
         </animated.div>
       </div>
