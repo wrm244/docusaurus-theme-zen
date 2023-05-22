@@ -30,7 +30,7 @@
 
 ![网站首页](./static/assets/images/docus_bark.png)
 
-这是使用docusaurus搭建的主题，结合了docusaurus简单易用与其他开源页面设计方案、支持MDX和React、可扩展和定制等优点，以及加上多设计美观、博客与文档一体的主题，为你提供了一个优秀的个人页面解决方案。该主题使用🦖 <a href="https://docusaurus.io/">Docusaurus</a>搭建，遵循[MIT](./LICENSE)协议。
+这是使用docusaurus搭建的主题，结合了docusaurus简单易用与其他开源页面设计方案、支持MDX和React、可扩展和定制等优点，以及加上多设计美观、博客与文档一体的主题，为你提供了一个优秀的个人页面解决方案。该主题使用🦖 <a href="https://docusaurus.io/">Docusaurus</a>搭建，参考[kuizuo](https://kuizuo.cn/)进行二次修改，遵循[MIT](./LICENSE)协议。
 > This is a theme built with docusaurus, which combines the simplicity and ease of use of docusaurus with other open source page design solutions, supports MDX and React, is extensible and customizable, and also has a beautiful design, a blog and documentation integrated theme, providing you with an excellent personal page solution.
 
 ## 特性
@@ -159,7 +159,7 @@ jobs:
       - name: Github page Deploy
         uses: wrm244/docusaurus-deploy-action@master # 
         env:
-          PERSONAL_TOKEN: ${{ secrets.PERSION_TOKEN }} # Github个人账号密钥
+          PERSONAL_TOKEN: ${{ secrets.PERSION_TOKEN }} # 你的Github个人账号密钥
           PUBLISH_REPOSITORY: wrm244/docusaurus-theme-zen # 公共仓库，格式：GitHub 用户名/仓库名
           BRANCH: gh-pages # 部署分支
           PUBLISH_DIR: ./build # 部署 ./build 目录下的文件
