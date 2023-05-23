@@ -52,12 +52,12 @@ function Hero() {
         <animated.div style={trails[0]} className={styles.hero_text}>
           <Translate id="homepage.hero.greet">欢迎使用</Translate>
           <span className={styles.intro__name}>
-            <Translate id="homepage.hero.name">飞鸟集网络服务</Translate>
+            <Translate id="homepage.hero.name">飞鸟集</Translate>
           </span>
         </animated.div>
         <animated.p style={trails[1]}>
           <Translate id="homepage.hero.text">
-            {`飞鸟集是一个涵盖网络方案、网站建设、奇思妙想小工具的集合地。`}
+            {`飞鸟集是一个涵盖网络服务、网站建设、企业邮箱服务、奇思妙想小工具的集合地。`}
           </Translate>
           <br />
           {/* <Translate
@@ -94,11 +94,11 @@ function Hero() {
         <SocialLinks style={trails[2]} />
         <animated.div style={trails[3]}>
           <a className={styles.intro} href={'https://www.offshoreview.xyz'}>
-            <Translate id="hompage.hero.introduce">访问站点</Translate>
+            <Translate id="hompage.hero.introduce">注册试用</Translate>
           </a>
           <span>　</span>
-          <Button isLink href={'https://github.com/wrm244/docusaurus-theme-zen/'} target="_blank">
-            <Translate id="hompage.hero.text.repository">Github 仓库</Translate>
+          <Button isLink href={'https://ai.offshoreview.xyz'} target="_blank">
+            <Translate id="hompage.hero.text.repository">飞鸟 Chat (GPT)</Translate>
           </Button>
         </animated.div>
       </div>

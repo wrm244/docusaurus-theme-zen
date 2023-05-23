@@ -217,7 +217,7 @@ function BlogListPageContent(props: Props) {
         >
           {!isPaginated && (
             <h2 className="blog__section-title">
-              <Translate id="theme.blog.title.new">最新博客</Translate>
+              <Translate id="theme.blog.title.new">最新文档</Translate>
             </h2>
           )}
           <div className="row">

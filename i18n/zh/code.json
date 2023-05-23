@@ -17,7 +17,7 @@
     "description": "my name"
   },
   "homepage.hero.text": {
-    "message": "这是使用docusaurus搭建的主题，结合了docusaurus简单易用与其他开源页面设计方案、支持MDX和React、可扩展和定制等优点，以及加上多设计美观、博客与文档一体的主题，为你提供了一个优秀的个人页面解决方案。。",
+    "message": "这是使用 docusaurus 搭建的主题，结合了 docusaurus 简单易用与其他开源页面设计方案、支持 MDX 和 React、可扩展和定制等优点，以及加上多设计美观、博客与文档一体的主题，为你提供了一个优秀的个人页面解决方案。。",
     "description": "hero text"
   },
   "homepage.hero.look":{
@@ -164,7 +164,7 @@
     "message": "推荐阅读"
   },
   "theme.blog.title.new":{
-    "message": "最新博客"
+    "message": "最新文档"
   },
   "theme.blog.tagTitle": {
     "message": "{nPosts} 含有标签「{tagName}」",

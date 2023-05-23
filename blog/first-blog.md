@@ -1,20 +1,20 @@
 ---
 slug: first-blog
-title: Docusaurus-Theme-Zen
-date: 2023-04-12 14:09:58
-tags: [docusaurus-theme-zen,lifestyle]
+title: 发刊词
+date: 2023-05-22 14:09:58
+tags: [飞鸟集,blog]
 authors: RiverMountain
 ---
-![logo](/assets/images/avatar300.png)
-## Docusaurus-Theme-Zen
-![GitHub last commit](https://img.shields.io/github/last-commit/wrm244/docusaurus-theme-zen?label=update&logo=github)  
 
-![Github Action](https://github.com/wrm244/docusaurus-theme-zen/actions/workflows/ci.yml/badge.svg) 
+![logo](https://pan.createvoyage.com/f/JWcK/first-blog.jpeg)
 
+## 发刊词
+
+这是飞鸟集文档中心第一篇文档。
 
 ## 介绍
 
-这是使用docusaurus搭建的主题，结合了docusaurus简单易用与其他开源页面设计方案、支持MDX和React、可扩展和定制等优点，以及加上多设计美观、博客与文档一体的主题，为你提供了一个优秀的个人页面解决方案。该主题使用🦖 <a href="https://docusaurus.io/">Docusaurus</a>搭建，遵循[MIT](./LICENSE)协议。
+这是使用 docusaurus 搭建的主题，结合了 docusaurus 简单易用与其他开源页面设计方案、支持 MDX 和 React、可扩展和定制等优点，以及加上多设计美观、博客与文档一体的主题，为你提供了一个优秀的个人页面解决方案。该主题使用🦖 <a href="https://docusaurus.io/">Docusaurus</a>搭建，遵循[MIT](./LICENSE)协议。
 
 <!-- truncate -->
 
@@ -37,7 +37,7 @@ authors: RiverMountain
 ├── i18n                           # 国际化
 ├── src
 │   ├── components                 # 组件
-│   ├── css                        # 自定义CSS
+│   ├── css                        # 自定义 CSS
 │   ├── pages                      # 自定义页面
 │   ├── plugin                     # 自定义插件
 │   └── theme                      # 自定义主题组件
@@ -46,7 +46,7 @@ authors: RiverMountain
 ├── docusaurus.config.js           # 站点的配置信息
 ├── sidebars.js                    # 文档的侧边栏
 ├── package.json
-└── yarn.lock                      # 建议使用yarn保留
+└── yarn.lock                      # 建议使用 yarn 保留
 ```
 
 ## 安装
@@ -78,7 +78,7 @@ yarn run serve
 ```
 
 ## Github Action CI
-该流程配置会同步部署到云服务器与GitHub Pages上面：修改```/.github/workflows/ci.yml```路径下的配置文件
+该流程配置会同步部署到云服务器与 GitHub Pages 上面：修改```/.github/workflows/ci.yml```路径下的配置文件
 
 ```yml
 name: ci
@@ -117,7 +117,7 @@ jobs:
         run: |
           yarn run build
 
-      #使用SSH同步到云服务器
+      #使用 SSH 同步到云服务器
       # - name: SSH Deploy
       #   uses: easingthemes/ssh-deploy@v2.2.11
       #   env:
@@ -131,7 +131,7 @@ jobs:
       - name: Github page Deploy
         uses: wrm244/docusaurus-deploy-action@master # 
         env:
-          PERSONAL_TOKEN: ${{ secrets.PERSION_TOKEN }} # Github个人账号密钥
+          PERSONAL_TOKEN: ${{ secrets.PERSION_TOKEN }} # Github 个人账号密钥
           PUBLISH_REPOSITORY: wrm244/docusaurus-theme-zen # 公共仓库，格式：GitHub 用户名/仓库名
           BRANCH: gh-pages # 部署分支
           PUBLISH_DIR: ./build # 部署 ./build 目录下的文件

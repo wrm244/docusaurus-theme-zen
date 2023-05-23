@@ -1,7 +1,7 @@
 const path = require('path')
 const math = require('remark-math');
 const katex = require('rehype-katex');
-const announcementBarContent = `🎉欢迎浏览<a href="https://github.com/wrm244/docusaurus-theme-zen/" target="_blank">docusaurus-theme-zen</a>`
+const announcementBarContent = `🎉 新用户免费试用三天 <a href="https://www.offshoreview.xyz/auth/register">(需邀请码)</a>`
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -9,10 +9,10 @@ const config = {
   titleDelimiter: '-',
   url: 'https://docs.offshoreview.xyz',//请填写你的网站
   baseUrl: '/docusaurus-theme-zen/',//建议填写/
-  favicon: '/assets/images/social/avatar.ico',
+  favicon: 'https://www.offshoreview.xyz/favicon.ico',
   organizationName: '',
   projectName: 'docusaurus-theme-zen',
-  tagline: 'docusaurus 的一款美观便捷主题',
+  tagline: '飞鸟集网络服务',
   onBrokenLinks: 'ignore',  //忽略坏链
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
@@ -52,11 +52,11 @@ const config = {
       },
     },
     navbar: {
-      title: 'docusaurus-theme-zen',
+      title: '飞鸟集',
       logo: {
         alt: 'your name',
-        src: '/assets/images/social/avatar.png',
-        srcDark: '/assets/images/social/avatar.png',//记得加上绝对路径/
+        src: 'https://pan.createvoyage.com/f/GzUA/icon.png',
+        srcDark: 'https://pan.createvoyage.com/f/GzUA/icon.png',//记得加上绝对路径/
       },
       hideOnScroll: false,
       items: [
@@ -81,13 +81,13 @@ const config = {
         {
           label: '帮助中心',
           position: 'left',
-          to: 'docs/stack/',
-          items: [
+          to: 'docs/tutorial/intro',
+/*          items: [
             {
-              label: '学习栈',
+              label: '客户端',
               to: 'docs/stack/',
             },
-          ],
+          ], */
         },
         {
           label: '导航',
@@ -160,12 +160,12 @@ const config = {
               to: 'resource',
             },
             {
-              html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="/assets/images/buildwith.png" /></a> <a href="https://www.netlify.com/" target="_blank"><img alt="Built with Netlify" style="height:50px;margin-top:0.5rem" src="/assets/images/netlify-color-accent.svg" /></a>`,
+              html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="https://pan.createvoyage.com/f/KEf4/buildwith.png" /></a>`,
             },
           ],
         },
       ],
-      copyright: `版权所有 © ${new Date().getFullYear()} docusaurus-theme-zen, 此网站使用 <a href="https://docusaurus.io/zh-CN/" target="_blank">Docusaurus</a> 搭建
+      copyright: `版权所有 © ${new Date().getFullYear()} 飞鸟集网络, 此网站主题基于 <a href="https://github.com/wrm244/docusaurus-theme-zen" target="_blank">Theme-zen</a>  搭建。
       <span id="runtime_span"></span>
       <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
       Date("10/16/2022 8:22:00");
