@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus_theme_zen=self.webpackChunkdocusaurus_theme_zen||[]).push([[625],{2866:function(e){e.exports=JSON.parse('{"label":"docusaurus-theme-zen","permalink":"/docusaurus-theme-zen/tags/docusaurus-theme-zen","allTagsPath":"/docusaurus-theme-zen/tags","count":1}')}}]);
